@@ -1,0 +1,14 @@
+.breadcrumb {
+    padding: 0.75rem 0rem;
+    background-color: transparent;
+    border-radius: 0;
+
+    a {
+        &:hover {
+            color: var(--color-secondary);
+            text-decoration: none;
+
+        }
+    }
+
+}

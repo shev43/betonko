@@ -1,0 +1,113 @@
+.parameters {
+    min-height: 235px;
+    position: relative;
+    padding: 25px 35px;
+    background: var(--color-light);
+    margin: 0 0 30px;
+
+    & + & {
+        margin-top: 30px;
+    }
+
+    &-item {
+        padding: 10px 0;
+        display: flex;
+        font-size: 18px;
+        line-height: 25px;
+
+        &--unknow {
+            color: var(--color-dark-gray);
+        }
+
+        .icon {
+            &-type {
+                margin-right: 18px;
+                flex-shrink: 0;
+            }
+
+            &-money {
+                margin-right: 13px;
+            }
+        }
+    }
+
+    &-refresh {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        outline: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-main);
+        cursor: pointer;
+        transition: .15s ease-in-out;
+        border-radius: 4px;
+
+        &:hover {
+            background: var(--color-secondary);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-white);
+        }
+    }
+
+    &-radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        cursor: pointer;
+        fill: transparent;
+        margin: 0;
+
+        svg {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            width: 30px;
+            height: 30px;
+            fill: inherit;
+        }
+    }
+
+    [type=radio] {
+        display: none;
+
+        &:checked {
+            & ~ .parameters-radio {
+                fill: var(--color-secondary);
+                box-shadow: 0 4px 15px rgba(#000, .1);
+            }
+        }
+    }
+}
+
+.properties {
+    margin: 0 0 60px;
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 0 20px 30px 0;
+
+        @include media-breakpoint-down(xs) {
+            padding: 0 10px 30px 0;
+        }
+
+        &:nth-child(1) {
+            width: 1%;
+        }
+    }
+}

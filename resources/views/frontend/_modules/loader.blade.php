@@ -1,0 +1,36 @@
+<div class="loader" style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="122.348">
+        <g class="loader-g1">
+            <path d="M9.325 93.083L35.041 7.992l-9.213 1.045A24.825 24.825 0 0017 11.756c-6.278 3.322-9.183 8.668-11.523 13.033C1.215 32.739.175 40.45.012 45.678l4.3 32.685a24.709 24.709 0 005.013 14.72z" fill="#005d8d" />
+            <radialGradient id="a" cx="259.198" cy="887.432" r="32.225" gradientTransform="scale(-1 1) rotate(13.999 3479.223 -650.373)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#40a4dc" />
+                <stop offset="1" stop-color="#3783c5" />
+            </radialGradient>
+            <path d="M5.467 105.837l25.716-85.09-9.213 1.046A24.7 24.7 0 00.001 46.648l.452 44.469a24.703 24.703 0 005.014 14.72z" fill="url(#a)" />
+        </g>
+        <g class="loader-g2">
+            <path d="M26.78 102.768l26.802 2.492L84.681 2.359l-33.047 3.75-28.987 95.916c1.334.355 2.713.611 4.133.743z" fill="#0e6d39" />
+            <radialGradient id="b" cx="228.06" cy="900.501" r="45.351" gradientTransform="scale(-1 1) rotate(13.999 3479.223 -650.373)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#37ab5e" />
+                <stop offset="1" stop-color="#009748" />
+            </radialGradient>
+            <path d="M22.921 115.522l26.802 2.492L80.821 15.113l-33.047 3.75-28.987 95.916c1.335.355 2.715.61 4.134.743z" fill="url(#b)" />
+        </g>
+        <g class="loader-g3">
+            <path d="M100.209 109.595L130.691 8.732l-13.128-6.296A24.723 24.723 0 00104.062.159l-2.79.317-32.105 106.233 31.042 2.886z" fill="#71973e" />
+            <radialGradient id="c" cx="184.505" cy="911.516" r="47.58" gradientTransform="scale(-1 1) rotate(13.999 3479.223 -650.373)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#a2c85d" />
+                <stop offset="1" stop-color="#8dbf43" />
+            </radialGradient>
+            <path d="M96.35 122.348l30.482-100.861-13.128-6.296a24.723 24.723 0 00-13.501-2.277l-2.79.317-32.105 106.232 31.042 2.885z" fill="url(#c)" />
+        </g>
+        <g class="loader-g4">
+            <path d="M123.075 116.067l11.323-5.823a34.259 34.259 0 006.201-5.431c9.328-10.417 9.544-23.701 9.368-28.618l-.437-43.092c-.058-5.756-2.066-11.12-5.535-15.375l-31.263 103.434 10.343-5.095z" fill="#c1bc43" />
+            <radialGradient id="d" cx="155.168" cy="926.46" r="33.923" gradientTransform="scale(-1 1) rotate(13.999 3479.223 -650.373)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#f0eb88" />
+                <stop offset="1" stop-color="#e3e157" />
+            </radialGradient>
+            <path d="M114.771 120.259l17.737-8.954c8.486-4.284 13.698-12.851 13.602-22.357l-.437-43.092c-.058-5.756-2.066-11.12-5.535-15.374l-27.405 90.679a24.239 24.239 0 002.038-.902z" fill="url(#d)" />
+        </g>
+    </svg>
+</div>

@@ -1,0 +1,36 @@
+
+.logo {
+    height: 48px;
+
+    @include media-breakpoint-down(xs) {
+        height: 32px;
+    }
+
+    .inner {
+        fill: #fff;
+
+        .header & {
+            fill: #434243;
+        }
+    }
+}
+
+.about-page {
+    margin: 60px auto 140px auto;
+    text-align: center;
+
+    .logo {
+        height: 100px;
+
+        @include media-breakpoint-down(xs) {
+            height: 92px;
+        }
+
+        .inner {
+            fill: #434243;
+        }
+    }
+
+}
+
+

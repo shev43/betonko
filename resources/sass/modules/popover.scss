@@ -1,0 +1,78 @@
+
+.popover {
+    box-shadow: 0 4px 20px 0 rgba(#000, .1);
+    border-radius: 10px;
+    border: none;
+    background: #FFF;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .05em;
+    color: var(--color-dark);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        max-width: 385px;
+    }
+
+    &-header {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        padding: 18px 18px 12px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 300;
+        color: inherit;
+    }
+
+    &-body {
+        color: inherit;
+        padding: 0 18px 20px;
+        font-size: 20px;
+        line-height: 28px;
+
+        a {
+            &:hover {
+                color: var(--color-secondary);
+                text-decoration: none;
+
+            }
+        }
+
+    }
+}
+
+.bs-popover-auto {
+    &[x-placement^="top"] {
+        margin-bottom: 21px;
+    }
+
+    &[x-placement^="right"] {
+        margin-left: 21px;
+    }
+
+    &[x-placement^="bottom"] {
+        margin-top: 21px;
+    }
+
+    &[x-placement^="left"] {
+        margin-right: 21px;
+    }
+}
+
+.bs-popover {
+    &-top {
+        margin-bottom: 21px;
+    }
+
+    &-right {
+        margin-left: 21px;
+    }
+
+    &-bottom {
+        margin-top: 21px;
+    }
+
+    &-left {
+        margin-right: 21px;
+    }
+}

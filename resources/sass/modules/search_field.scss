@@ -1,0 +1,12 @@
+
+.search_field {
+    display: flex;
+    align-items: center;
+    margin: 0 0 50px auto;
+    max-width: 300px;
+
+    .icon {
+        margin-right: 20px;
+        fill: var(--color-dark);
+    }
+}

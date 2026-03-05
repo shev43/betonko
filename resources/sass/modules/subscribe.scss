@@ -1,0 +1,285 @@
+.subscribe {
+    margin-bottom: 0;
+
+    &-item-top {
+
+        &-img {
+            width:100%;
+            height:100%;
+            background-size: cover;
+        }
+
+        &-body {
+            height: 100%;
+            padding-top: 30px;
+            padding-bottom: 0px;
+
+            h3 {
+                font-size: 42px;
+                font-weight: 600;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 28px;
+                }
+
+                span {
+                    color: var(--color-main);
+                }
+            }
+
+            &-txt {
+                align-items: start;
+                margin-bottom: 60px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 30px;
+                }
+
+                &-p1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                &-p2 {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                &-p3 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+
+                    @include media-breakpoint-up(md) {
+                        width: 180px;
+                    }
+                }
+
+
+            }
+        }
+
+        .buttons {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: fit-content;
+            max-width: max-content;
+
+            form {
+                display: inline-block;
+            }
+
+            .btn {
+                display: inline-block;
+                font-weight: 500;
+                margin-right: 40px;
+                margin-top: 20px;
+
+
+                @include media-breakpoint-up(md) {
+                    width: auto;
+                    min-width: 315px;
+                    max-width: 100%;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                &.price-year {
+                    margin-right: 0;
+
+                    @include media-breakpoint-down(md) {
+                        margin-top: 20px;
+                    }
+
+                }
+
+                &.price-mount {
+                    background-color: var(--color-white);
+                    border: 1px solid var(--color-main);
+                    color: var(--color-main);
+
+                    &:hover {
+                        background-color: var(--color-secondary);
+                        border: 1px solid var(--color-secondary);
+                        color: var(--color-white);
+                    }
+
+                }
+
+
+            }
+
+            p {
+                margin-top: 15px;
+                text-align: left;
+
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                }
+                @include media-breakpoint-up(xl) {
+                    text-align: right;
+                }
+            }
+
+        }
+
+        & .benefits {
+            margin-top: 20px;
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+
+            &-item {
+                width: 120px;
+                height: 120px;
+                margin-right: 40px;
+                @include media-breakpoint-down(xs) {
+                    width: 90px;
+                    height: 90px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                }
+
+                @include media-breakpoint-down(xl) {
+                    display: inline-block;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+
+                }
+
+                p {
+                    width: 100%;
+                    margin-top: 7px;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &-item-middle {
+        margin-top: 130px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 60px;
+        }
+
+        &-img {
+            width:100%;
+            height:100%;
+            min-height: 500px;
+            background-size: cover;
+        }
+
+
+        h3 {
+            font-size: 42px;
+            font-weight: 600;
+
+            @include media-breakpoint-down(md) {
+                font-size: 28px;
+            }
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 30px;
+
+            @include media-breakpoint-down(md) {
+                margin-top: 20px;
+            }
+        }
+
+        .buttons {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: fit-content;
+            max-width: max-content;
+
+            form {
+                display: inline-block;
+            }
+
+            .btn {
+                display: inline-block;
+                font-weight: 500;
+                margin-top: 40px;
+
+                @include media-breakpoint-down(md) {
+                    margin-top: 0px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    width: auto;
+                    min-width: 315px;
+                    max-width: 100%;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-right: 0px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                &.price-year {
+                    margin-top: 20px;
+                }
+
+                &.price-mount {
+                    background-color: var(--color-white);
+                    border: 1px solid var(--color-main);
+                    color: var(--color-main);
+
+                    &:hover {
+                        background-color: var(--color-secondary);
+                        border: 1px solid var(--color-secondary);
+                        color: var(--color-white);
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    &-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h1 {
+            font-size: 62px;
+            font-weight: 800;
+            color: #fff;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 24px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 44px;
+            }
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.noUi-horizontal {
+    height: 8px;
+}
+
+.noUi-target {
+    background: var(--color-gray);
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
+
+.noUi-connect {
+    background: var(--color-secondary);
+}
+
+.noUi-handle {
+    border: 2px solid var(--color-main);
+    box-shadow: 0 4px 15px rgba(#000, .1);
+    background: var(--color-white);
+    border-radius: 50%;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+    top: -4px;
+    right: -8px;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+    display: none;
+}
+
+.order {
+    &-label {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.07em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        svg {
+            position: absolute;
+            transform: translate(-100%, -50%);
+            left: -5px;
+            top: 50%;
+            width: 24px;
+            height: 24px;
+        }
+
+        .alt {
+            left: 0;
+            width: 29px;
+            height: 29px;
+        }
+    }
+
+    &-fg {
+        margin-bottom: 25px;
+    }
+
+    &-form {
+        padding-bottom: 40px;
+
+        @include media-breakpoint-down(md) {
+            .form-group {
+                label {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &-edit {
+        display: inline-flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 700;
+        color: var(--color-dark);
+        margin-top: 9px;
+
+        &:hover {
+            color: var(--color-dark);
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+            padding: 4px;
+            background: var(--color-main);
+            fill: var(--color-white);
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+    }
+
+    &-detail {
+        margin-bottom: 40px;
+
+        .properties {
+            padding: 30px 40px 10px;
+            background: var(--color-light);
+            margin-bottom: 40px;
+
+            @include media-breakpoint-down(xs) {
+                padding: 30px 20px 10px;
+            }
+
+            td {
+                padding: 0 30px 30px 0;
+
+                @include media-breakpoint-down(xs) {
+                    padding: 0 10px 30px 0;
+                }
+            }
+        }
+    }
+
+    &-price {
+        margin-bottom: 40px;
+
+        &-range {
+            display: flex;
+            align-items: center;
+
+            .form-control {
+                @include media-breakpoint-up(md) {
+                    width: 95px;
+                }
+                text-align: center;
+            }
+
+            span {
+                display: block;
+                width: 60px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                flex-shrink: 0;
+            }
+        }
+
+        &-count {
+            display: flex;
+            align-items: center;
+            margin: 0 0 60px;
+
+            .heading {
+                margin: 0;
+            }
+
+            .form-control {
+                width: 65px;
+                //@include media-breakpoint-down(sm) {
+                //    width: auto;
+                //}
+                text-align: center;
+                margin: 0 20px;
+                flex-shrink: 0;
+            }
+        }
+
+        &-total {
+            .title {
+                margin-bottom: 10px;
+            }
+
+            .heading {
+                margin: 0 0 8px;
+            }
+        }
+    }
+
+    &-contact {
+        margin: 0 0 40px;
+    }
+
+    &-delivery {
+        margin: 0 0 40px;
+    }
+}
+
+.range {
+    margin: 0 0 0px;
+    padding-top: 5px;
+
+    &-slider {
+        @include media-breakpoint-down(md) {
+            max-width: 100%;
+        }
+        max-width: 255px;
+        margin: 0 0 15px;
+    }
+
+    .disabled {
+        pointer-events: none;
+        filter: grayscale(1) opacity(.8);
+    }
+
+}
+
+

@@ -1,0 +1,55 @@
+.footer {
+    position: relative;
+    flex-shrink: 0;
+    color: var(--color-white);
+    background-color: var(--color-main);
+    padding: 40px;
+
+    @include media-breakpoint-down(sm) {
+        [class*="col-"] {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-nav {
+        list-style: none;
+        padding: unset;
+        margin: unset;
+
+        li + li {
+            margin-top: 12px;
+        }
+    }
+
+    &-link {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 21px;
+        color: inherit;
+
+        &:hover {
+            color: var(--color-light);
+            text-decoration: none;
+        }
+    }
+
+    &-contact {
+        display: inline-flex;
+        color: var(--color-white);
+        font-size: 16px;
+        margin-right: 30px;
+
+        &:hover {
+            color: var(--color-light);
+            text-decoration: none;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            margin-right: 16px;
+            fill: var(--color-white);
+        }
+    }
+}
