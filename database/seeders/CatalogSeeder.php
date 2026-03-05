@@ -439,7 +439,7 @@ class CatalogSeeder extends Seeder
                  ['mark' => '400', 'class' => 'b30', 'frost' => 'f200', 'water' => 'w8', 'mobility' => 's4', 'winter' => 'm5', 'price' => 3130],
              ]],
 
-            ['user' => ['first_name' => 'Відділ', 'last_name' => 'Продажів', 'email' => 'client@kovalska.com', 'phone' => '0800601189'],
+            ['user' => ['first_name' => 'Відділ', 'last_name' => 'Продажів', 'email' => 'chernigiv@kovalska.com', 'phone' => '0800601189'],
              'business' => ['name' => 'Ковальська Чернігів', 'phone' => '0800607075', 'email' => 'client@kovalska.com', 'description' => 'АТ "Будіндустрія", група Ковальська. ISO 9001:2015. Лабораторний контроль. 20+ років.', 'address' => 'м. Чернігів, вул. Індустріальна, 11', 'www' => 'https://chernigiv.kovalska.com'],
              'factories' => [['name' => 'Ковальська — Чернігів', 'address' => 'м. Чернігів, вул. Індустріальна, 11', 'region' => 'Чернігівська область', 'lat' => 51.4649, 'lng' => 31.2531]],
              'contacts' => [['name' => 'Приватні покупці', 'position' => 'Менеджер', 'phone' => '0800601188']],
@@ -478,8 +478,10 @@ class CatalogSeeder extends Seeder
         // ========== INSERT DATA ==========
         $userCounter = User::count();
 
-        foreach ($companies as $companyData) {
+        foreach ($companies as $idx => $companyData) {
             $userCounter++;
+
+            try {
 
             $user = User::create([
                 'account_type' => 3,
@@ -552,6 +554,11 @@ class CatalogSeeder extends Seeder
                         'comment' => null,
                     ]);
                 }
+            }
+
+            } catch (\Exception $e) {
+                echo "ERROR seeding company #{$idx} ({$companyData['business']['name']}): {$e->getMessage()}\n";
+                continue;
             }
         }
 
